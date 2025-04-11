@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvar Vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background: gray -300px;">
+    <nav class="bg-lime-600  md:fixed w-full z-10">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-white text-3xl font-semibold">
+                <a href="/index.html">
+                    <img style="width: 100px;" src="/images/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-10">
+                <a href="/about.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">About</a>
+    
+                <div class="relative group">
+                    <a href="/services.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Services</a>
+                </div>
+    
+                <div class="relative group">
+                    <a href="#"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Products</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 1</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 2</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 3</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Contact
+                    Us</a>
+    
+                <div class="relative group">
+                    <a href="onlinewellness.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Online
+                        Services</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Consultation</a>
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Counselling Sessions</a>
+                        <a href="/contact.html" class="block px-4 py-2 hover:bg-blue-500">Online Booking</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html" class="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-green-200 text-lg">Book
+                    Now</a>
+            </div>
+    <!-- Hamburger -->
+            <div class="md:hidden">
+                <button id="menuButton" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="grid grid-cols-3 md:hidden bg-lime-700 text-white px-4 py-4 hidden space-y-4">
+          <a href="/index.html" class="block text-lg">Homepage</a>
+          <a href="/about.html" class="block text-lg">About</a>
+          <a href="/services.html" class="block text-lg">Services</a>
+          <a href="#" class="block text-lg">Products</a>
+          <a href="/onlinewellness.html" class="block text-lg">Online Services</a>
+          <a href="/contact.html" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 text-lg">Book Now</a>
+      </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+        </script>
+    </nav>
+
+    <section class="relative py-20 px-6 md:px-12 lg:px-24 bg-cover bg-center mb-6" style="background-image: url('/images/individual.jpg');">
+        <div class="max-w-6xl mx-auto text-center bg-white/70 md:bg-white/50 p-6 md:p-10 rounded-lg">
+            <h2 class="text-4xl md:text-6xl font-bold text-gray-900 mt-4 md:mt-8 leading-tight">Individual Holistic Therapy</h2>
+            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mt-4 md:mt-8">You Don’t Have to Find Your Way Alone.</h3>
+            <p class="text-lg md:text-2xl text-stone-950 mt-4 max-w-2xl mx-auto">
+                If you’ve been feeling stressed, anxious, depressed; experiencing poor sleep, self-doubt, isolation; having difficulty in relationships, or are finally ready to dig into your childhood trauma, We're here to help you sort it out. Together we’ll navigate different ways of looking at and working through your struggles while also exploring how you got there to begin with.
+            </p>
+        </div>
+    </section>
+    
+    <section
+        class=" bg-gray-300 py-12 px-6 md:px-16 lg:px-32">
+        <h2 class="text-center font-bold text-3xl">Individual Therapy</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center flex mt-4">
+
+            <!--Images -->
+            <div class="relative flex justify-center">
+                <div>
+                    
+                    <img src="/images/individual2.jpg" alt="Interior Design" class=" rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="text-stone-950 text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl">
+                <p class="mt-2 text-stone-900">
+                    We work one-on-one to help those struggling with insecurity, self-doubt, isolation, anxiety, depression, poor sleep, and managing relationships–often times these relationships are with one’s own dysfunctional family of origin. Our approach is holistic, compassionate, and designed to help you start where you are uncovering your strengths, gaining new insights, and honing the skills you desire to overcome life’s challenges. Working from an Attachment perspective, We will help you gain a new understanding of your past, the roles caregivers played in your development, and how this may be impacting your present struggles. 
+                    <br>
+                    We will help you understand how your thoughts, feelings, and behaviors all adapted over time and had a purpose; to get your needs met or to protect you from unsafe situations. Additionally,  we may teach you about your nervous system to help you understand what’s happening in your body. We incorporate mind, body and soul techniques to help you access deep or stuck feelings, reduce unwanted emotions, and work through unresolved trauma. Together, we’ll find an approach that works best for you. 
+                    <br>
+                    <br>
+                    <span class="font-bold">The methods we offer are listed below:</span>
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+    <section
+        class="bg-gray-200 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center flex mt-4">
+
+            <!-- Text Content -->
+            <div class="text-stone-950 text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl">
+                <h2 class="text-center font-bold text-3xl">EMDR (Eye Movement Desensitization and Reprocessing)</h2>
+                <p class="mt-2 text-stone-900">
+                    Eye Movement Desensitization and Reprocessing is a highly focused approach to treating anxiety, PTSD, panic, and trauma by reconnecting you with the thoughts, images, emotions, and body sensations associated with the negative experiences you’re trying to overcome. This enables the brain to take control of upsetting thoughts and memories, and move toward adaptive self-healing resolutions. 
+            </div>
+
+            <!--Images -->
+            <div class="relative flex justify-center">
+                <div>
+                    
+                    <img src="/images/eye.jpg" alt="Interior Design" class=" rounded-lg shadow-lg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section
+        class=" bg-gray-300 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center flex mt-4">
+            
+              <!--Images -->
+              <div class="relative flex justify-center">
+                <div>
+                    
+                    <img src="/images/brain.jpg" alt="Interior Design" class=" rounded-lg shadow-lg">
+                </div>
+            </div>
+            <!-- Text Content -->
+            <div class="text-stone-950 text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl">
+                <h2 class="text-center font-bold text-3xl">Brainspotting</h2>
+                <p class="mt-2 text-stone-900">
+                    Brainspotting is a gentle yet deep form of therapy that helps to access parts of the brain where traumatic memories are stored. By using eye positions associated with these painful memories, Brainspotting locates and strengthens your natural resources to regulate and control trauma response in the mind and body. This method has been proven to help those struggling with childhood trauma and PTSD. 
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-gray-200 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center flex mt-4">
+
+            <!-- Text Content -->
+            <div class="text-stone-950 text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl">
+                <h2 class="text-center font-bold text-3xl">CBT (Cognitive Behavioral Therapy)</h2>
+                <p class="mt-2 text-stone-900">
+                    Cognitive Behavioral Therapy is based on the idea that your feelings, thoughts, actions, and physical sensations are all connected. Therefore, negative thoughts and feelings can create unhealthy cycles of poor lifestyle choices leading to cyclical unhealthy behaviors and thought patterns. The goal of CBT is to take big or overwhelming issues and break them down into smaller, more manageable parts—taking them individually over time. 
+            </div>
+
+            <!--Images -->
+            <div class="relative flex justify-center">
+                <div>
+                    
+                    <img src="/images/cbt.jpg" alt="Interior Design" class=" rounded-lg shadow-lg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section
+        class="bg-gray-300 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center flex mt-4">
+
+            <!--Images -->
+            <div class="relative flex justify-center">
+                <div>
+                    
+                    <img src="/images/dbt.jpg" alt="Interior Design" class=" rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="text-stone-950 text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl">
+                <h2 class="text-center font-bold text-3xl">DBT (Dialectical Behavioral Therapy)</h2>
+                <p class="mt-2 text-stone-900">
+                    Dialectical Behavioral Therapy involves the development of mindfulness, distress tolerance, interpersonal relationship effectiveness, and emotion regulation by identifying and changing negative thinking patterns into positive behavior ones. It’s well suited for those experiencing self-destructive behavior or self-injury. It can help to improve self-esteem, joy, and relationship connection.  
+            </div>
+
+        </div>
+    </section>
+    <section
+        class="bg-gray-200 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center flex mt-4">
+
+            <!-- Text Content -->
+            <div class="text-stone-950 text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl">
+                <h2 class="text-center font-bold text-3xl">Teletherapy</h2>
+                <p class="mt-2 text-stone-900">
+                    We offer teletherapy as an alternative to in-person sessions so that you can get support from the comfort and privacy of your own home or office. With teletherapy, there’s no commute so you save time and gas and have more appointment options. Teletherapy has been shown to be as effective as in-person therapy and is compatible with talk therapy, EMDR, and Brainspotting. 
+            </div>
+
+            <!--Images -->
+            <div class="relative flex justify-center">
+                <div>
+                    
+                    <img src="/images/teletherapy.jpg" alt="Interior Design" class=" rounded-lg shadow-lg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="relative py-20 px-6 md:px-12 lg:px-24 bg-cover bg-center h-auto min-h-[400px] flex flex-col items-center justify-center text-center" style="background-image: url('/images/individual.jpg');">
+        <div class="max-w-4xl bg-white/80 md:bg-white/60 p-6 md:p-10 rounded-lg shadow-lg backdrop-blur-md">
+            <p class="text-xl md:text-2xl text-gray-900 leading-relaxed">
+                You don’t have to go it alone. We're here to help you find your way.
+                <br class="hidden md:block">
+                We offer a <span class="font-semibold text-purple-700">free 15-minute consultation</span>. Contact us to schedule one today.
+            </p>
+        </div>
+        
+        <div class="mt-8">
+            <a href="/contact.html" 
+                class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Book an Appointment
+            </a>
+        </div>
+    </section>
+    
+
+    <footer class="bg-lime-600 text-gray-900 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Left Column (Clinic Info & Socials) -->
+            <div>
+                <img src="/images/logo.png" alt="Capitol Physiotherapy Logo" class="w-48 mb-4">
+                <p class="text-gray-800 text-sm">
+                    SAlvar Vida is the ultimate destination for reconnecting with yourself, revitalizing your body and refreshing your mind. It is a place for transformation.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Middle Column (Quick Links) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Quick Links</h3>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="/index.html" class="text-gray-700 hover:text-red-600">Home</a></li>
+                    <li><a href="/about.html" class="text-gray-700 hover:text-red-600">About Us</a></li>
+                    <li><a href="/services.html" class="text-gray-700 hover:text-red-600">Services</a></li>
+                    <li><a href="/contact.html" class="text-gray-700 hover:text-red-600">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Right Column (Working Hours) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Working Hours</h3>
+                <ul class="mt-2 space-y-2 text-gray-700">
+                    <li>Monday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Tuesday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                     <li>Thursday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Friday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Saturday <span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>

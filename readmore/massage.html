@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvar Vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background: gray -300px;">
+    <nav class="bg-lime-600  md:fixed w-full z-10">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-white text-3xl font-semibold">
+                <a href="/index.html">
+                    <img style="width: 100px;" src="/images/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-10">
+                <a href="/about.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">About</a>
+    
+                <div class="relative group">
+                    <a href="/services.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Services</a>
+                </div>
+    
+                <div class="relative group">
+                    <a href="#"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Products</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 1</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 2</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 3</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Contact
+                    Us</a>
+    
+                <div class="relative group">
+                    <a href="onlinewellness.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Online
+                        Services</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Consultation</a>
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Counselling Sessions</a>
+                        <a href="/contact.html" class="block px-4 py-2 hover:bg-blue-500">Online Booking</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html" class="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-green-200 text-lg">Book
+                    Now</a>
+            </div>
+    <!-- Hamburger -->
+            <div class="md:hidden">
+                <button id="menuButton" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="grid grid-cols-3 md:hidden bg-lime-700 text-white px-4 py-4 hidden space-y-4">
+          <a href="/index.html" class="block text-lg">Homepage</a>
+          <a href="/about.html" class="block text-lg">About</a>
+          <a href="/services.html" class="block text-lg">Services</a>
+          <a href="#" class="block text-lg">Products</a>
+          <a href="/onlinewellness.html" class="block text-lg">Online Services</a>
+          <a href="/contact.html" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 text-lg">Book Now</a>
+      </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+        </script>
+    </nav>
+    
+    <section
+        class=" hero-section relative w-full h-screen flex items-center justify-center px-6 bg-gradient-to-r from-lime-100 to-lime-500">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Text Content -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-lime-100 drop-shadow-lg">
+                    Massage Time
+                </h2>
+                <p class="mt-2 text-xl text-stone-900 font-bold">
+                    Massage Therapy is not just an indulgence. It's an investment in your health.
+                </p>
+                
+                <a href="/contact.html"
+                    class="inline-block mt-6 px-8 py-3 bg-white text-lime-700 font-semibold rounded-full shadow-lg hover:bg-lime-600 hover:text-white transition duration-300">
+                    BOOK A SESSION
+                </a>
+            </div>
+
+            <!-- Circular Images -->
+            <div class="relative flex justify-center">
+                <!-- Main Image -->
+                <div>
+                    
+                    <img src="/images/ayuvedic.jpg" alt="Interior Design" class="w-full rounded-lg shadow-lg">
+                </div>
+
+        </div>
+    </section>
+    <section class="flex flex-col items-center justify-center py-16 bg-lime-300 text-center">
+        <!-- Quote -->
+        <h2 class="text-2xl md:text-6xl font-serif font-semibold text-stone-950">
+            Which massage is right 
+            <br>
+            for you?
+        </h2>
+
+    </section>
+    
+    <section class="bg-gradient-to-r from-lime-300 to-lime-200 py-20 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+            <!-- Right Column (Text Content) -->
+            <div class="p-10 rounded-xl bg-white/30 backdrop-blur-md shadow-2xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-4xl font-bold text-green-800 mb-6">The Holistic Massage (Relaxing Full Body Massage)</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    This massage takes into account not just your physical body, but your emotional and spiritual wellbeing. Allow your body to relax under our touch and let us work our magic.
+                </p>
+    
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Sole Therapy (Reflexology)</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Socrates once said, “When our feet hurt, we hurt all over.” Reflexology is based on the principle that there are reflexes in our feet that correspond to every gland, organ, and part of the body. The nerve endings in the feet are stimulated to balance energy, promote healing, and increase circulation. Reflexology can release blockages, helping your body to eliminate toxins and waste. Perfect for a quick fix at any time of the day.
+                </p>
+    
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Shiatsu Massage</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Ancient Japanese form of massage that utilizes the hands, thumb or other body parts to apply direct pressure without use of oil on various points or channels in the body.
+                </p>
+    
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-8">
+                    <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book Now
+                    </a>
+                    <p class="text-gray-700 text-lg">Schedule online. It’s easy, fast, and secure.</p>
+                </div>
+            </div>
+
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/holistic2.jpg" alt="Relaxing Massage" class="w-full rounded-xl shadow-xl">
+            </div>
+        </div>
+    </section> 
+
+    <section class="bg-gradient-to-r from-lime-300 to-lime-200 py-20 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/swedish1.jpg" alt="Relaxing Massage" class="w-full rounded-xl shadow-xl">
+            </div>
+    
+            <!-- Right Column (Text Content) -->
+            <div class="p-10 rounded-xl bg-white/30 backdrop-blur-md shadow-2xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-4xl font-bold text-green-800 mb-6">Relaxing Swedish Massage</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Escape life's pressures with a deeply relaxing Swedish massage. Our certified therapists use gentle, rhythmic strokes to reduce stress, improve circulation, and restore harmony to your body and mind.
+                </p>
+    
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Lymphatic Massage (Flush Out Toxins)</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Rejuvenate your system with a lymphatic massage, designed to drain toxins and boost immunity. Our therapists specialize in fluid-release techniques that leave you feeling lighter, refreshed, and energized.
+                </p>
+    
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Salvar Vida Sports Massage</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Designed for athletes, this massage alleviates tension, improves circulation, and enhances recovery. Get ready to boost flexibility, reduce lactic acid buildup, and optimize your performance.
+                </p>
+    
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-8">
+                    <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book Now
+                    </a>
+                    <p class="text-gray-700 text-lg">Schedule online. It’s easy, fast, and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-lime-300 to-lime-200 py-20 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+            <!-- Right Column (Text Content) -->
+            <div class="p-10 rounded-xl bg-white/30 backdrop-blur-md shadow-2xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-4xl font-bold text-green-800 mb-6">Prenatal Massage</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Prenatal massage is a specific type of massage tailored to help relieve the strains and pains caused by pregnancy. Usually, the massage focuses on the areas of the body that are most affected by pregnancy. This includes the lower back, the mid-back, the calves, the feet and even the stomach. Are you having issues with swelling in your extremities? We offer a lymphatic treatment, specifically for pregnancy, to help with that. Is that belly feeling heavy, as you near your last trimester. We offer pregnancy taping, as well, to help alleviate some of that back pain, and to give your belly some support.
+                </p>
+    
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Cupping Massage</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    A modified version of ancient Chinese cupping therapy in which suction is produced on the skin in order to stimulate blood flow and promote healing. It is also used to stretch muscle and connective tissue. Combined with massage, this is a great modality for athletes or anyone who likes deep pressure with less discomfort.
+                </p>
+    
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Pregnancy Massage</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Pregnancy massage is a relaxing, therapeutic massage that focuses on the special needs that arise during pregnancy. It reduces discomforts and concerns, such as backaches, swelling, and leg cramps. Extra care and attention are given to the mother’s comfort and stage of pregnancy.
+
+
+                </p>
+    
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-8">
+                    <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book Now
+                    </a>
+                    <p class="text-gray-700 text-lg">Schedule online. It’s easy, fast, and secure.</p>
+                </div>
+            </div>
+
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/prenatal.jpg" alt="Relaxing Massage" class="w-full rounded-xl shadow-xl">
+            </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-r from-lime-300 to-lime-200 py-20 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/stone.jpg" alt="Relaxing Massage" class="w-full rounded-xl shadow-xl">
+            </div>
+            
+            <!-- Right Column (Text Content) -->
+            <div class="p-10 rounded-xl bg-white/30 backdrop-blur-md shadow-2xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-4xl font-bold text-green-800 mb-6">Energy Stone Massage With Warm And Cold Gems</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    The interaction of a beneicial massage with the powerful intensity of crystal facilitates equilibrium and deep relaxation.
+                </p>
+    
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Ear Candle Treatment</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Gentle eardrum massage with light pressure stimulates blood Flow and lymph circulation. Treatment reduces stress, can rectify sleep disorders and alleviate tinnitus.
+                </p>
+    
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Traditional Chinese Massage</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Ancient chinese form of massage that utilizes the hands, thumb or other body parts to apply direct pressure without use of oil on various points or channels in the body.
+                </p>
+                <h2 class="text-4xl font-bold text-green-800 mt-8 mb-4">Salvar Vida Signature Massage</h2>
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Soft, yet energetic massage to induce relaxation and inner peace, combine with body scrub, Sauna & Jacuzzi.
+                </p>
+    
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-8">
+                    <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book Now
+                    </a>
+                    <p class="text-gray-700 text-lg">Schedule online. It’s easy, fast, and secure.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-lime-400 text-gray-900 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Left Column (Clinic Info & Socials) -->
+            <div>
+                <img src="/images/logo.png" alt="Capitol Physiotherapy Logo" class="w-48 mb-4">
+                <p class="text-gray-800 text-sm">
+                    SAlvar Vida is the ultimate destination for reconnecting with yourself, revitalizing your body and refreshing your mind. It is a place for transformation.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Middle Column (Quick Links) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Quick Links</h3>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="/index.html" class="text-gray-700 hover:text-red-600">Home</a></li>
+                    <li><a href="/about.html" class="text-gray-700 hover:text-red-600">About Us</a></li>
+                    <li><a href="/services.html" class="text-gray-700 hover:text-red-600">Services</a></li>
+                    <li><a href="/contact.html" class="text-gray-700 hover:text-red-600">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Right Column (Working Hours) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Working Hours</h3>
+                <ul class="mt-2 space-y-2 text-gray-700">
+                    <li>Monday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Tuesday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                     <li>Thursday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Friday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Saturday <span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

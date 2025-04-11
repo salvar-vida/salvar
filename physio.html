@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvar Vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background: gray -300px;">
+    <nav class="bg-lime-600  md:fixed w-full z-10">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-white text-3xl font-semibold">
+                <a href="/index.html">
+                    <img style="width: 100px;" src="/images/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-10">
+                <a href="/about.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">About</a>
+    
+                <div class="relative group">
+                    <a href="/services.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Services</a>
+                </div>
+    
+                <div class="relative group">
+                    <a href="#"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Products</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 1</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 2</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 3</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Contact
+                    Us</a>
+    
+                <div class="relative group">
+                    <a href="onlinewellness.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Online
+                        Services</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Consultation</a>
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Counselling Sessions</a>
+                        <a href="/contact.html" class="block px-4 py-2 hover:bg-blue-500">Online Booking</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html" class="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-green-200 text-lg">Book
+                    Now</a>
+            </div>
+    <!-- Hamburger -->
+            <div class="md:hidden">
+                <button id="menuButton" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="grid grid-cols-3 md:hidden bg-lime-700 text-white px-4 py-4 hidden space-y-4">
+          <a href="/index.html" class="block text-lg">Homepage</a>
+          <a href="/about.html" class="block text-lg">About</a>
+          <a href="/services.html" class="block text-lg">Services</a>
+          <a href="#" class="block text-lg">Products</a>
+          <a href="/onlinewellness.html" class="block text-lg">Online Services</a>
+          <a href="/contact.html" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 text-lg">Book Now</a>
+      </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+        </script>
+    </nav>
+    
+    <section class="bg-gray-400 py-20 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-gray-900">
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="images/pjysio2.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
+            </div>
+    
+            <!-- Right Column (Text) -->
+            <div class="text-lg leading-relaxed space-y-6" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-gray-900">
+                    Elevating Your Wellness with Expert Physiotherapy
+                </h2>
+                <p class="opacity-0 animate-fade-in">
+                    At <span class="font-semibold text-gray-800">Frontline</span>, we are committed to providing 
+                    <span class="text-gray-900 font-semibold">personalized physiotherapy solutions</span> designed to restore your strength, mobility, and overall well-being. Our treatments are meticulously tailored and guided by the latest scientific research.
+                </p>
+                <p class="opacity-0 animate-fade-in delay-200">
+                    What sets us apart? We go the extra mile in your care. Along with expert in-person treatment, 
+                    we provide a professionally designed <span class="font-semibold text-gray-900">home exercise program</span> that you can conveniently access via your phone, tablet, or computer.
+                </p>
+                <p class="opacity-0 animate-fade-in delay-400">
+                    Experience physiotherapy that not only treats but empowers you on your journey to recovery and wellness.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-300 py-20 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900">Our Physiotherapy Services</h2>
+            <p class="text-lg text-stone-950 mt-4 max-w-2xl mx-auto">
+                Using state-of-the-art equipment, this department assists our patients who have had fractures, muscle problems, stroke and trauma return to their normal self by restoring their bodies’ ability to move and function normally
+            </p>
+        </div>
+    
+        <div class="max-w-6xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+            <img src="images/physio1.jpg" alt="Physiotherapy" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-green-700">Physiotherapy</h3>
+                <p class="text-gray-700 mt-2">
+                    We treat individuals affected by injury, illness, or disability through movement, exercise, and therapy.
+                </p>
+                <a href="/readmore/pt.html#physio" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+            </div>
+        </div>
+    
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                <img src="images/physio2.jpg" alt="Pelvic Floor Physiotherapy" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700">Pelvic Floor Physiotherapy</h3>
+                    <p class="text-gray-700 mt-2">
+                        We focus on improving pelvic floor health through specialized exercises and techniques.
+                    </p>
+                    <a href="/readmore/pt.html#pelvic" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+                </div>
+            </div>
+    
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                <img src="images/physio3.jpg" alt="Neurological Physiotherapy" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700">Neurological Physiotherapy</h3>
+                    <p class="text-gray-700 mt-2">
+                        We help individuals with movement disorders caused by brain, spinal cord, or nerve injuries.
+                    </p>
+                    <a href="/readmore/pt.html#neuro" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+                </div>
+            </div>
+    
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                <img src="images/physio4.jpg" alt="Orthopaedic Physiotherapy" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700">Orthopaedic Physiotherapy</h3>
+                    <p class="text-gray-700 mt-2">
+                        Helping you recover from injuries such as fractures, sprains, and muscle tears.
+                    </p>
+                    <a href="/readmore/pt.html#ortho" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+                </div>
+            </div>
+    
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                <img src="images/physio5.jpg" alt="Joint Pain & Management" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700">Joint Pain & Management</h3>
+                    <p class="text-gray-700 mt-2">
+                        Helping you maintain mobility and reduce pain with targeted treatments.
+                    </p>
+                    <a href="/readmore/pt.html#joint" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+                </div>
+            </div>
+    
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                <img src="images/physio6.jpg" alt="Pre and Post Surgery Physiotherapy" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700">Pre & Post Surgery Physiotherapy</h3>
+                    <p class="text-gray-700 mt-2">
+                        We guide you through strengthening and mobilization exercises before and after surgery.
+                    </p>
+                    <a href="/readmore/pt.html#postsurge" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+                </div>
+            </div>
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                <img src="images/physio7.jpg" alt="Orthopaedic Physiotherapy" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700">Geriatric Physiotherapy</h3>
+                    <p class="text-gray-700 mt-2">
+                        We specialise in the assessment, treatment and long-term management of older people in the comfort of their homes.
+                    </p>
+                    <a href="/readmore/pt.html#geriatric" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+                </div>
+            </div>
+    
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                <img src="images/physio8.jpg" alt="Joint Pain & Management" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700">Sports injuries & Management</h3>
+                    <p class="text-gray-700 mt-2">
+                        We provide a safe therapeutic approach to help athletes to effectively treat pain and achieve optimal performance. 
+                    </p>
+                    <a href="/readmore/pt.html#sports" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+                </div>
+            </div>
+    
+            <!-- Service Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+                <img src="images/physio9.jpg" alt="Pre and Post Surgery Physiotherapy" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700">Myofascial Pain and Management</h3>
+                    <p class="text-gray-700 mt-2">
+                        We combine light stretching and massage to release muscle tension and break up any knots (trigger points)  or scar tissue. 
+                    </p>
+                    <a href="/readmore/pt.html#myofascial" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-lime-600 text-gray-900 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Left Column (Clinic Info & Socials) -->
+            <div>
+                <img src="/images/logo.png" alt="Capitol Physiotherapy Logo" class="w-48 mb-4">
+                <p class="text-gray-800 text-sm">
+                    SAlvar Vida is the ultimate destination for reconnecting with yourself, revitalizing your body and refreshing your mind. It is a place for transformation.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Middle Column (Quick Links) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Quick Links</h3>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="/index.html" class="text-gray-700 hover:text-red-600">Home</a></li>
+                    <li><a href="/about.html" class="text-gray-700 hover:text-red-600">About Us</a></li>
+                    <li><a href="/services.html" class="text-gray-700 hover:text-red-600">Services</a></li>
+                    <li><a href="/contact.html" class="text-gray-700 hover:text-red-600">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Right Column (Working Hours) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Working Hours</h3>
+                <ul class="mt-2 space-y-2 text-gray-700">
+                    <li>Monday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Tuesday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                     <li>Thursday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Friday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Saturday <span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- Include AOS (Animate on Scroll) Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    
+
+    <script>
+        AOS.init();
+    </script>
+    <!-- Tailwind CSS Animations -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+    
+
+</body>
+
+</html>

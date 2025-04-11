@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvar Vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background: gray -300px;">
+    <nav class="bg-lime-600  md:fixed w-full z-10">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-white text-3xl font-semibold">
+                <a href="/index.html">
+                    <img style="width: 100px;" src="/images/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-10">
+                <a href="/about.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">About</a>
+    
+                <div class="relative group">
+                    <a href="/services.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Services</a>
+                </div>
+    
+                <div class="relative group">
+                    <a href="#"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Products</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 1</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 2</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 3</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Contact
+                    Us</a>
+    
+                <div class="relative group">
+                    <a href="onlinewellness.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Online
+                        Services</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Consultation</a>
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Counselling Sessions</a>
+                        <a href="/contact.html" class="block px-4 py-2 hover:bg-blue-500">Online Booking</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html" class="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-green-200 text-lg">Book
+                    Now</a>
+            </div>
+    <!-- Hamburger -->
+            <div class="md:hidden">
+                <button id="menuButton" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="grid grid-cols-3 md:hidden bg-lime-700 text-white px-4 py-4 hidden space-y-4">
+          <a href="/index.html" class="block text-lg">Homepage</a>
+          <a href="/about.html" class="block text-lg">About</a>
+          <a href="/services.html" class="block text-lg">Services</a>
+          <a href="#" class="block text-lg">Products</a>
+          <a href="/onlinewellness.html" class="block text-lg">Online Services</a>
+          <a href="/contact.html" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 text-lg">Book Now</a>
+      </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+        </script>
+    </nav>
+    
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center"
+        style="background-image: url('/images/physiohero.jpg');">
+
+        <!-- Dark overlay for readability -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <!-- Hero Content -->
+        <div class="relative text-center text-white">
+            <h1 class="text-5xl md:text-6xl font-serif font-bold opacity-0 animate-fade-in">
+                The Best Care
+            </h1>
+        </div>
+
+        <!-- Keyframe Animations -->
+        <style>
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .animate-fade-in {
+                animation: fadeIn 1.5s ease-out forwards;
+            }
+
+            .animation-delay-500 {
+                animation-delay: 0.5s;
+            }
+        </style>
+
+    </section>
+
+    <section id="physio" class="bg-lime-300 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/physio1.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Physiotherapy</h2>
+                <p class="text-gray-700">
+                    Through our professional physiotherapists, we help people affected by injury, illness, or disability
+                    through movement and exercise, manual therapy, education, and advice.
+                </p>
+                <p class="text-gray-700">
+                    Our goal is to maintain health for people of all ages, helping patients manage pain and prevent
+                    disease.
+                    We encourage development and facilitate recovery, ensuring individuals remain independent and
+                    active.
+                </p>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li><b>Neurological:</b> Stroke, multiple sclerosis, Parkinson’s</li>
+                    <li><b>Neuromusculoskeletal:</b> Back pain, whiplash, arthritis, sports injuries</li>
+                    <li><b>Cardiovascular:</b> Chronic heart disease, post-heart attack rehab</li>
+                    <li><b>Respiratory:</b> Asthma, COPD, cystic fibrosis</li>
+                </ul>
+
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="#"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pelvic" class="bg-lime-200 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-18 items-center">
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Pelvic Floor Physiotherapy</h2>
+                <p class="text-gray-700">
+                    Pelvic floor physiotherapists help women rehabilitate their pelvic floor muscles. These muscles can
+                    be weakened by childbirth, surgery, heavy lifting, being overweight, constipation or menopause. The
+                    pelvic floor muscles support the womb (uterus), bladder and bowel (colon), forming a 'sling' from
+                    the pubic bone at the front to the tailbone at the back. If the muscles are weak, this can affect
+                    bladder and bowel control, resulting in incontinence (leakage) or prolapse.
+                </p>
+                <p class="text-gray-700">
+                    For other women, their pelvic floor muscles may be overactive; that is, they can switch on
+                    involuntarily when they should be relaxing. These women need to learn to release their muscles.
+                    Overactivity can cause difficulty with having sex, emptying the bladder or bowels or using tampons.
+                </p>
+
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="#"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/pelvic-floor-muscles.avif" alt="Physiotherapy Session"
+                    class="w-full rounded-lg shadow-lg" style="width: 500px; height: auto;">
+            </div>
+        </div>
+    </section>
+    <section id="neuro" class="bg-lime-300 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/neuropt.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg" style="width: 500px; height: 500px;">
+            </div>
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Neurological Physiotherapy</h2>
+                <p class="text-gray-700">
+                    Neurological physiotherapy is the treatment of patients who have a neurological disorder.
+                    <br>
+                    Neurological disorders are those affecting the brain, spinal cord and nerves; such as stroke, MS and
+                    Parkinson's disease.
+                </p>
+                <p class="text-gray-700">
+                    Treatment in neurological conditions is typically based upon exercises to restore motor function through attempting to overcome motor deficits and improve motor patterns. To achieve this aim various theoretical frameworks have been promoted, each based upon inferences drawn from basic and clinical science research.
+                    <br>
+                    <br>
+                    Whilst some of these have remained static, others are designed to take into account new developments, perhaps the most notable example being the "movement science" framework.
+                </p>
+
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="#"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ortho" class="bg-lime-200 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Right Column (Text Content) -->
+            <div class=" text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Orthopaedic Physiotherapy</h2>
+                <p class="text-gray-700">
+                    Orthopaedic Physiotherapy also includes pre and post operative rehabilitation of hip, shoulder and knee. Orthopaedic Physiotherapy is a scientific approach to treatment following Evidence Based Guidelines. Initially the physiotherapist will carry out a clinical assessment and this is followed by appropriate treatments. It is important to get to the source of the problem and prevent a re-occurrence. 
+                </p>
+                <p class="text-gray-700">
+                    The treatment goal of the orthopaedic physiotherapist is to provide pain relief, increase joint range, improve strength and flexibility and restore the patient to full function  
+                    Orthopaedic Conditions treated by us at the physio-company include:
+                </p>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li>Ligament Strain, Sprain or tear</li>
+                    <li>Fracture Rehabilitation</li>
+                    <li>Inflammation of tendons or Bursa</li>
+                    <li> Osteo & Rheumatoid - Arthritis</li>
+                    <li> Osteoporosis</li>
+                    <li>Surgical Rehabilitation of Hip, Shoulder, Knee and Foot/Ankle</li>
+                    <li>Chronic heart disease, post-heart attack rehab</li>
+                </ul>
+
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="#"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600 text-lg">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+             <!-- Left Column (Image) -->
+             <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/orthopt.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+    <section id="Joint" class="bg-lime-300 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/jointpt.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Joint Pain And Management</h2>
+                <p class="text-gray-700">
+                    We assess and treat all manner of joint pain and dysfunction. Seeing a physiotherapist is a really good first port of call if you have a problem and many GPs also refer clients to us for a musculo-skeletal assessment and diagnosis.
+                </p>
+                <p class="text-gray-700">
+                    We can advise you on whether <b>physiotherapy treatment</b> is appropriate for you. If it is, we can provide treatment and, if it is not, we can advise you on what your best next step should be e.g. seeing your GP, another Specialist such as an Orthopaedic Consultant or Rheumatologist or any other options
+                </p>    
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="#"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="postsurge" class="bg-lime-200 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Pre/Post Surgery Rehab</h2>
+                <p class="text-gray-700">
+                    Pre-surgical physiotherapy may consist of a set of exercises on how to strengthen and mobilise the area as well as post-op advice on how to move in and out of bed and chair and instructions on how to use equipment such as crutches or slings. Importantly your Physiotherapist can spend time reassuring you on the procedure and reducing any anxieties you may have.
+                </p>
+                <p class="text-gray-700">
+                    We provide post-operative treatment for both inpatients and outpatients. We have long standing relationships with many surgeons, allowing us to keep up-to-date with modern surgical techniques and procedures to ensure your optimal recovery.
+                    The most common surgeries for which you can expect physiotherapy treatment include:
+                </p>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li>Orthopaedic Surgery: bone, joint and muscle repairs, reconstructions and replacements</li>
+                    <li>Spinal and Neurological Surgery: spinal fusions, disc repairs and replacements, brain surgery and other procedures</li>
+                    <li>Abdominal and Thoracic Surgery: surgery for the internal organs including the lungs, heart, liver, gastrointestinal system and other organs</li>
+                    <li>Obstetric and Gynaecological Surgery: postnatal, hysterectomy, gynaecological repairs and reconstructions and other procedures</li>
+                    <li>Urological Surgery: bladder and prostate surgery</li>
+                    <li>Breast Surgery: resections and reconstructions</li>
+                </ul>
+
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="#"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+
+             <!-- Left Column (Image) -->
+             <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/surgept.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+    <section id="geriatric" class="bg-lime-300 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/geriatricpt.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Geriatric Physiotherapy</h2>
+                <p class="text-gray-700">
+                    Providing physiotherapy to older people is a quite interersting, perhaps best described by the following: "Working with older people can present the physiotherapist with a set of scenarios unparalleled in other areas of practice.
+                </p>
+                <p class="text-gray-700">
+                    The caseload is very mixed; patients with musculoskeletal, neurological, and cardiovascular problems may all be found in a single caseload and often in the same patient. Interlinking between medical, psychological, rehabilitative, economic and social problems that all need attention is the norm, rather than the exception. Add to these the differences in presentation of disease, the unique pattern of ageing in each individual, and the varying responses that older people may demonstrate, and the complexity of the challenge is obvious but we do our best to make these patients feel better.
+                </p>
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="/contact.html"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sports" class="bg-lime-200 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Sports injuries & Management</h2>
+                <p class="text-gray-700">
+                    All rehabilitation programs must take into account, and reproduce, the activities and movements required when the athlete returns to the field post-injury.
+                </p>
+                <p class="text-gray-700">
+                    The goal of function-based rehabilitation programmes is the return of the athlete to optimum athletic function. Optimal athletic function is the result of physiological motor activations creating specific biomechanical motions and positions using intact anatomical structures to generate forces and actions.
+                </p>
+                <p class="text-gray-700">
+                    Our team ensures that we manage the athletes in a way that they can get back to carrying out their normal day to day activities as soon as possible.
+                </p>
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="#"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+
+             <!-- Left Column (Image) -->
+             <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/physio1.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+    <section id="myofascial" class="bg-lime-300 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/physio1.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Myofascial Pain & Management</h2>
+                <p class="text-gray-700">
+                    Myofascial release is a type of physical therapy often used to treat myofascial pain syndrome. Myofascial pain syndrome is a chronic pain disorder caused by sensitivity and tightness in your myofascial tissues. These tissues surround and support the muscles throughout your body.
+                </p>
+                <p class="text-gray-700">
+                    Myofascial release focuses on reducing pain by easing the tension and tightness in the trigger points. It’s not always easy to understand what trigger point is responsible for the pain. Localizing pain to a specific trigger point is very difficult. For that reason, myofascial release is often used over a broad area of muscle and tissue rather than at single points.
+                </p>
+                <p class="text-gray-700">
+                    We will gently massage the myofascia and feel for stiff or tightened areas. Normal myofascia should feel pliable and elastic. The therapist will begin massaging and stretching the areas that feel rigid with light manual pressure. The therapist then aids the tissue and supportive sheath in releasing pressure and tightness. The process is repeated multiple times on the same trigger point and on other trigger points until the therapist feels the tension is fully released.
+                </p>
+
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="#"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-lime-600 text-gray-900 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Left Column (Clinic Info & Socials) -->
+            <div>
+                <img src="/images/logo.png" alt="Capitol Physiotherapy Logo" class="w-48 mb-4">
+                <p class="text-gray-800 text-sm">
+                    SAlvar Vida is the ultimate destination for reconnecting with yourself, revitalizing your body and refreshing your mind. It is a place for transformation.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Middle Column (Quick Links) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Quick Links</h3>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="/index.html" class="text-gray-700 hover:text-red-600">Home</a></li>
+                    <li><a href="/about.html" class="text-gray-700 hover:text-red-600">About Us</a></li>
+                    <li><a href="/services.html" class="text-gray-700 hover:text-red-600">Services</a></li>
+                    <li><a href="/contact.html" class="text-gray-700 hover:text-red-600">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Right Column (Working Hours) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Working Hours</h3>
+                <ul class="mt-2 space-y-2 text-gray-700">
+                    <li>Monday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Tuesday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                     <li>Thursday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Friday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Saturday <span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include AOS (Animate on Scroll) Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <script>
+        AOS.init(); // Initialize animations
+    </script>
+
+
+
+</body>
+
+</html>

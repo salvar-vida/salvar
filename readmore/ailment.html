@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvar Vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body style="background: gray -300px;">
+    <nav class="bg-lime-600  md:fixed w-full z-10">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-white text-3xl font-semibold">
+                <a href="/index.html">
+                    <img style="width: 100px;" src="/images/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-10">
+                <a href="/about.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">About</a>
+    
+                <div class="relative group">
+                    <a href="/services.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Services</a>
+                </div>
+    
+                <div class="relative group">
+                    <a href="#"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Products</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 1</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 2</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 3</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html"
+                    class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Contact
+                    Us</a>
+    
+                <div class="relative group">
+                    <a href="onlinewellness.html"
+                        class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Online
+                        Services</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Consultation</a>
+                        <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Counselling Sessions</a>
+                        <a href="/contact.html" class="block px-4 py-2 hover:bg-blue-500">Online Booking</a>
+                    </div>
+                </div>
+    
+                <a href="/contact.html" class="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-green-200 text-lg">Book
+                    Now</a>
+            </div>
+    <!-- Hamburger -->
+            <div class="md:hidden">
+                <button id="menuButton" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="grid grid-cols-3 md:hidden bg-lime-700 text-white px-4 py-4 hidden space-y-4">
+          <a href="/index.html" class="block text-lg">Homepage</a>
+          <a href="/about.html" class="block text-lg">About</a>
+          <a href="/services.html" class="block text-lg">Services</a>
+          <a href="#" class="block text-lg">Products</a>
+          <a href="/onlinewellness.html" class="block text-lg">Online Services</a>
+          <a href="/contact.html" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 text-lg">Book Now</a>
+      </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+        </script>
+    </nav>
+    
+    <section
+        class=" hero-section relative w-full h-screen flex items-center justify-center px-6 bg-gradient-to-r from-lime-100 to-lime-500">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Text Content -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl mt-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-lime-100 drop-shadow-lg">
+                    Salvar Vida Homeopathy
+                </h2>
+                <p class="mt-2 text-6xl text-stone-900 font-bold">
+                    Ailment Treatments
+                </p>
+                <p class="mt-2 text-xl text-stone-900 font-bold">
+                    Address specific health concerns with our Ailment Treatments, offering targeted, holistic solutions for a variety of conditions such as arthritis, diabetes, hypertension, and more. Combining Ayurvedic wisdom with modern techniques, these programs aim to alleviate symptoms and restore balance to your body.
+                </p>
+                
+                <a href="/contact.html"
+                    class="inline-block mt-6 px-8 py-3 bg-white text-lime-700 font-semibold rounded-full shadow-lg hover:bg-lime-600 hover:text-white transition duration-300">
+                    BOOK A SESSION
+                </a>
+            </div>
+
+            <!-- Circular Images -->
+            <div class="relative flex justify-center">
+                <!-- Main Image -->
+                <div>
+                    
+                    <img src="/images/hero.jpg" alt="Interior Design" class="w-full rounded-lg shadow-lg mt-6">
+                </div>
+
+        </div>
+    </section>
+
+    <section class="bg-lime-200 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/wight.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Weight Loss Management programme</h2>
+                <p class="text-gray-700">
+                    The Weight Loss Management Program at Salvar Vida is designed to empower individuals to make positive lifestyle changes and achieve a sustainable, optimal body composition. This result-oriented program is not just about shedding pounds; it's about kickstarting a new way of thinking, making self-enhancing lifestyle choices, and embracing a healthier way of life. Ideal for those dealing with obesity, diabetes, cardiac health issues, or simply struggling with weight loss, our comprehensive approach ensures improved energy, body toning, boosted metabolism, and overall fitness.
+                </p>
+                <h2 class="text-xl font-bold text-green-700">Program Benefits:</h2>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li>Effective Weight Loss : Achieve significant weight loss through a personalized, holistic approach that addresses the root causes of weight gain.</li>
+                    <li>Boosted Metabolism : Enhance metabolic rate with targeted therapies and nutritional guidance, promoting more efficient energy use and fat burning.
+                    <li>Improved Energy and Body Toning : Experience an increase in energy levels and improved body composition, resulting in a toned and healthier physique.</li>
+                    <li>Overall Health and Fitness Improvement : Embrace a comprehensive wellness journey that not only focuses on weight loss but also enhances your overall health and well-being.</li>
+                    
+                </ul>
+                <p class="text-gray-700">
+                    Individuals facing obesity, diabetes, sedentary lifestyles, insulin resistance, or simply those who have found it challenging to lose weight through conventional means.
+                </p>
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="/contact.html"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-lime-300 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+           
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Diabetes Management</h2>
+                <p class="text-gray-700">
+                    Diabetes, a chronic metabolic disorder, significantly impacts the body's ability to manage blood sugar levels. At Salvar Vida, our Diabetes Management Program employs a comprehensive approach, blending Ayurvedic wisdom with modern lifestyle interventions to enhance diabetic control, reduce insulin resistance, and minimize complications associated with diabetes.
+                </p>
+                <h2 class="text-xl font-bold text-green-700">Program Benefits:</h2>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li>Enhanced Diabetic Control : Managing blood sugar levels effectively through a holistic approach.</li>
+                    <li>Reduced Insulin Resistance : Addressing underlying factors contributing to insulin resistance with natural therapies.</li>
+                    <li>Minimized Diabetes Complications : Preventing and reducing the risk of complications associated with diabetes.</li>
+                    <li>Overall Health Support : Promoting a healthier lifestyle and well-being beyond just managing diabetes.</li>
+                    
+                </ul>
+                <p class="text-gray-700">
+                    Individuals suffering from type-1 and type-2 diabetes, insulin resistance, obesity, diabetic retinopathy, neuropathy, and other related health issues.
+                    <br>
+                    <span class="font-bold">Days Required</span>: 10 days or more, allowing for a complete and immersive treatment experience.
+                </p>
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="/contact.html"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+
+             <!-- Left Column (Image) -->
+             <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/diabetis.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-lime-200 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                       
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/immunity.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Immunity Builder Program</h2>
+                <p class="text-gray-700">
+                    The Immunity Builder Program at Naturoville is a holistic approach to enhancing the body's natural defenses. Recognizing that our immune system is a reflection of our lifestyle and health, this program integrates Ayurveda, Naturopathy, Yoga, and modern wellness techniques to boost adaptive immunity, improve gut health, and elevate overall energy levels. Designed for those recovering from infections, suffering from digestive issues, or simply aiming to boost their immune system, this program offers a path to revitalized health.
+                </p>
+                <h2 class="text-xl font-bold text-green-700">Program Benefits:</h2>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li>Enhanced Adaptive Immunity : Strengthening the body's ability to adapt to and fight off infections.</li>
+                    <li>Treatment for Recurrent Allergies : Addressing and mitigating the effects of allergies on the body.</li>
+                    <li>Boosted Energy and Vitality : Revitalizing energy levels for a more active and fulfilling lifestyle.</li>
+                    <li>Improved Gut Health : Enhancing the digestive system's function as a core component of immunity.</li>
+                    
+                </ul>
+                <p class="text-gray-700">
+                    Individuals post-infection rehab, with poor digestion or gut concerns, suffering from co-morbidities, recurrent infections, or those frequently on antibiotics looking to build a robust immune system.
+                </p>
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="/contact.html"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+
+             
+        </div>
+    </section>
+    <section class="bg-lime-300 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+           
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Psoriasis</h2>
+                <p class="text-gray-700">
+                    The Psoriasis Treatment Program at Naturoville is designed to address this chronic autoimmune skin disorder with a holistic approach. Leveraging the ancient wisdom of Ayurveda and the natural healing principles of naturopathy, the program aims to detoxify the body, pacify immune dysfunctions, and provide a perennial cure for skin issues.
+                </p>
+                <h2 class="text-xl font-bold text-green-700">Program Benefits:</h2>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li>Efficacious Cure for Skin Disorders : Significant relief from psoriasis symptoms and other skin disorders through holistic healing methods.</li>
+                    <li>Pacification of Immune Disorders : Targeted treatments to address and soothe underlying immune dysfunctions contributing to psoriasis.</li>
+                    <li>Perennial Cure of Skin Issues : Aiming for long-lasting relief and prevention of recurrence through deep internal cleansing and restoration.</li>
+                                        
+                </ul>
+                <p class="text-gray-700">
+                    Individuals suffering from psoriasis and other chronic skin conditions seeking an efficacious and natural cure.
+                    <br>
+                    <span class="font-bold">Days Required</span>: 14 days or more, allowing for a comprehensive and thorough treatment experience.
+                </p>
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="/contact.html"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+
+             <!-- Left Column (Image) -->
+             <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/Psoriasis.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-lime-200 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                       
+            <!-- Left Column (Image) -->
+            <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/arthritis.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">Arthritis Management</h2>
+                <p class="text-gray-700">
+                    At Salvar Vida, we provide a comprehensive Arthritis Management and Treatment Program, known as Sandhi Chikitsa, which focuses on alleviating pain and restoring mobility through Ayurvedic and naturopathic means. Our approach targets bone and joint health deterioration due to age, overuse, sedentary habits, and nutritional deficits, offering a path to rejuvenation and pain relief.
+                </p>
+                <h2 class="text-xl font-bold text-green-700">Program Benefits:</h2>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li>Restoration of Joint Health : Employing Ayurvedic and naturopathic treatments to restore joint function and mobility.</li>
+                    <li>Pain Relief and Reduced Stiffness : Alleviating pain and stiffness in the joints, enhancing quality of life.</li>
+                    <li>Strengthening Muscles and Joints : Targeting muscle weakness and joint deformation to prevent further deterioration.</li>
+                    <li>Balanced Doshas : Addressing the root cause of arthritis by restoring balance to Vata, Pitta, and Kapha doshas.</li>
+                    
+                </ul>
+                <p class="text-gray-700">
+                    Individuals suffering from arthritis, knee pain, back pain, spondylitis, slipped disc, rheumatism, and other joint-related ailments experiencing symptoms like pain during movement, joint stiffness, swelling, muscle weakness, or limited range of motion.
+                </p>
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="/contact.html"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+
+             
+        </div>
+    </section>
+
+    <section class="bg-lime-300 py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+           
+
+            <!-- Right Column (Text Content) -->
+            <div class="text-white text-center md:text-left p-10 rounded-lg bg-white/10 backdrop-blur-lg shadow-xl" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold text-green-700">High Blood Pressure</h2>
+                <p class="text-gray-700">
+                    At Salvar Vidar, our Hypertension Management Program takes a holistic approach to addressing the physical and mental causes of hypertension. Understanding that stressful lifestyles, hormonal variations, sleep disturbances, and other factors contribute to high blood pressure, we offer a comprehensive plan to manage and reduce hypertension effectively.
+                </p>
+                <h2 class="text-xl font-bold text-green-700">Program Benefits:</h2>
+                <ul class="list-disc pl-6 text-gray-800">
+                    <li>Manages Blood Pressure : Aiming to stabilize and manage blood pressure levels through natural means.</li>
+                    <li>Improves Lipid Metabolism : Enhancing the body's ability to manage cholesterol and other fats.</li>
+                    <li>Improves Heart Health : Supporting cardiovascular health and reducing the risk of heart disease.</li>
+                    <li>Reduces Stress : Incorporating mind relaxation techniques to alleviate stress, a significant factor in hypertension.</li>
+                    <li>Harmonizes Body Systems : Fostering overall well-being and harmony within the body's systems.</li>
+                                        
+                </ul>
+                <p class="text-gray-700">
+                    People suffering from high blood pressure, high cholesterol, heart disease, or those on blood pressure control medication but still unable to manage hypertension effectively.
+                    <br>
+                    <span class="font-bold">Days Required</span>: 10 days or more, allowing for an immersive treatment experience tailored to individual health needs.
+                </p>
+                <!-- Call to Action -->
+                <div class="flex items-center space-x-6 mt-6">
+                    <a href="/contact.html"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300">
+                        Book an Appointment
+                    </a>
+                    <p class="text-gray-600">Schedule online. It's easy, fast, and secure.</p>
+                </div>
+            </div>
+
+             <!-- Left Column (Image) -->
+             <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="/images/pressure.jpg" alt="Physiotherapy Session" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+      <footer class="bg-lime-400 text-gray-900 py-12 px-6 md:px-16 lg:px-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Left Column (Clinic Info & Socials) -->
+            <div>
+                <img src="/images/logo.png" alt="Capitol Physiotherapy Logo" class="w-48 mb-4">
+                <p class="text-gray-800 text-sm">
+                    SAlvar Vida is the ultimate destination for reconnecting with yourself, revitalizing your body and refreshing your mind. It is a place for transformation.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="bg-red-600 text-white p-2 rounded-lg"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Middle Column (Quick Links) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Quick Links</h3>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="/index.html" class="text-gray-700 hover:text-red-600">Home</a></li>
+                    <li><a href="/about.html" class="text-gray-700 hover:text-red-600">About Us</a></li>
+                    <li><a href="/services.html" class="text-gray-700 hover:text-red-600">Services</a></li>
+                    <li><a href="/contact.html" class="text-gray-700 hover:text-red-600">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Right Column (Working Hours) -->
+            <div>
+                <h3 class="font-bold text-lg"><span class="text-red-600">⭑</span> Working Hours</h3>
+                <ul class="mt-2 space-y-2 text-gray-700">
+                    <li>Monday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Tuesday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                     <li>Thursday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Friday<span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                    <li>Saturday <span class="text-gray-900"> 8:00am - 5:00pm</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
