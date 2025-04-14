@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 .hero-section {
     padding-top: 8rem; /* Adjust based on navbar height */
     min-height: 100vh; /* Ensure it takes full screen */
