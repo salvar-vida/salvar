@@ -9,6 +9,12 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <style>
+        body {
+          font-family: 'Segoe UI', sans-serif;
+          background: linear-gradient(to bottom right, #f3fdf4, #e8f5e9);
+        }
+      </style>
 </head>
 
 <body style="background: gray -300px;">
@@ -89,190 +95,188 @@
         </script>
     </nav>
 
-    <section class="bg-lime-700 py-20 px-6 md:px-12 lg:px-24">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-900">Our Programs</h2>
-            <p class="text-lg text-stone-950 mt-4 max-w-2xl mx-auto">
-                We provide a variety of services tailored to your personal needs for the purpose of improving
-                health,beauty, and relaxation through personal care treatments, such as body therapy and facials, while
-                also addressing the mind, body, and spirit to support health and healing holistically. Treatments vary;
-                traditionally, you can expect to find some type of water-based therapy as well as humanistic therapy.
-            </p>
+   
+    <section class="relative h-[90vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('/images/leaves.jpg');">
+        <div class=" backdrop-blur-md p-10  max-w-2xl mx-auto shadow-xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-green-900">Welcome to<br>Salvar Vida Holistic & Wellness Centre</h1>
+          <p class="mt-4 text-lg text-green-800">Mind • Body • Soul</p>
+          <a href="/contact.html" class="mt-6 inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition">Book a Session</a>
         </div>
+    </section>
 
-
-        <div class="max-w-6xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/physio.jpg" alt="Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Physiotherapy</h3>
-                    <p class="text-gray-700 mt-2">
-                        Restore mobility, reduce pain, and enhance physical function through expert-guided physiotherapy
-                        sessions.
-                    </p>
-                    <a href="/physio.html#" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
-                </div>
-            </div>
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/homeop.jpg" alt="Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Homeopathy</h3>
-                    <p class="text-gray-700 mt-2">
-                        A remedy chosen on the basis of a person's whole being including psychological, emotional and
-                        hereditary information, instead of just an individual illness will trigger the self-healing
-                        mechanism.
-                    </p>
-                    <a href="/readmore/homeopathy.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/ayurveda.jpg" alt="Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Ayurveda</h3>
-                    <p class="text-gray-700 mt-2">
-                        An ancient traditional system of medicine, Ayurveda is considered to be the oldest system of
-                        health care, with literature going back 5000 years and an oral tradition that is much older.
-                    </p>
-                    <a href="/readmore/ayurveda.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/holistic.jpg" alt="Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700"> Massage & Facial</h3>
-                    <p class="text-gray-700 mt-2">
-                        Embrace a balanced lifestyle with natural healing methods, mindfulness techniques, and holistic
-                        therapies.
-                    </p>
-                    <a href="/readmore/massage.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/holistic1.jpg" alt="Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Holistic Practice</h3>
-                    <p class="text-gray-700 mt-2">
-                        We treat individuals affected by injury, illness, or disability through movement, exercise, and
-                        therapy.
-                    </p>
-                    <a href="/readmore/holistic.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/dbt.jpg" alt="Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Individual Holistic Therapy</h3>
-                    <p class="text-gray-700 mt-2">
-                        We treat individuals affected by injury, illness, or disability through movement, exercise, and
-                        therapy.
-                    </p>
-                    <a href="/readmore/holistic.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
+      <section class="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-green-50 to-green-100">
+        <h2 class="text-4xl font-bold text-center text-green-800 mb-12">Our Services</h2>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
             <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/ailment.jpg" alt="Pelvic Floor Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Ailment Treatments</h3>
-                    <p class="text-gray-700 mt-2">
-                        Address specific health concerns with our Ailment Treatments, offering targeted, holistic
-                        solutions for a variety of conditions such as arthritis, diabetes, hypertension, and more.
-                    </p>
-                    <a href="/readmore/ailment.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/rejuvenation.jpg" alt="Pelvic Floor Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Rejuvenation Treatments</h3>
-                    <p class="text-gray-700 mt-2">
-                        Rejuvenate your body, mind, and spirit with our Rejuvenation Treatment programs, designed to
-                        restore vitality, enhance wellness, and revitalize your energy through a blend of traditional
-                        Ayurvedic therapies, holistic activities, and nutritional guidance.
-                    </p>
-                    <a href="/readmore/rejuvenation.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="/images/lifestyle.jpg" alt="Lifestyle Treatment" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Lifestyle Treatment</h3>
-                    <p class="text-gray-700 mt-2">
-                        Transform your daily life with our Lifestyle Treatment programs, focusing on integrating healthy
-                        habits, balanced nutrition, and stress management techniques into your routine.
-                    </p>
-                    <a href="/readmore/lifestyle.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="/images/diet.jpg" alt="Lifestyle Treatment" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Diet and Nutrition</h3>
-                    <p class="text-gray-700 mt-2">
-                        Clinical nutrition is a specialized area of nutrition that focuses on the use of food and nutrients to promote health and manage disease.
-                    </p>
-                    <a href="/readmore/nutrition.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/homecare.jpg" alt="Joint Pain & Management" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Home Care Visitations</h3>
-                    <p class="text-gray-700 mt-2">
-                        Helping you maintain mobility and reduce pain with targeted treatments.
-                    </p>
-                    <a href="/readmore/homecare.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read
-                        More</a>
-                </div>
-            </div>
-
-            <!-- Service Card -->
-            <div
-                class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="images/lifecoaching.jpg" alt="Pre and Post Surgery Physiotherapy" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-green-700">Life Coaching Programmes</h3>
-                    <p class="text-gray-700 mt-2">
-                        Tailored to promote long-term wellness, these treatments help you adopt a lifestyle that
-                        supports optimal health and happiness.
-                    </p>
-                    <a href="/readmore/lifecoaching.html" class="mt-4 inline-block text-blue-600 font-semibold">> Read More</a>
-                </div>
-            </div>
+           <!-- Service Card: Physiotherapy -->
+<div class="bg-gradient-to-br from-green-150 to-green-200 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/physio.jpg" alt="Physiotherapy" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Physiotherapy</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Restore mobility, reduce pain, and enhance physical function through expert-guided physiotherapy sessions tailored to your needs.
+    </p>
+    <a href="/physio.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Homeopathy -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/homeop.jpg" alt="Homeopathy" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Homeopathy</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      A holistic remedy addressing the whole being psychological, emotional, and hereditary to awaken your natural self-healing.
+    </p>
+    <a href="/readmore/homeopathy.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Ayurveda -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/ayurveda.jpg" alt="Ayurveda" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Ayurveda</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      An ancient science of life, Ayurveda promotes longevity and balance through time-tested herbs, therapies, and wellness rituals.
+    </p>
+    <a href="/readmore/ayurveda.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Massage & Facial -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/holistic.jpg" alt="Massage & Facial" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Massage & Facial</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Embrace natural healing and rejuvenation through our expert massage and facial therapies tailored to your wellness needs.
+    </p>
+    <a href="/readmore/massage.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Holistic Practice -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/holistic1.jpg" alt="Holistic Practice" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Holistic Practice</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Promoting healing through movement, exercise, and therapeutic practices tailored to restore balance and vitality.
+    </p>
+    <a href="/readmore/holistic.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Individual Holistic Therapy -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/dbt.jpg" alt="Individual Holistic Therapy" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Individual Holistic Therapy</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Taking a compassionate and integrative approach to healing the whole person—mind, body, and spirit.
+    </p>
+    <a href="/readmore/holistic.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Ailment Treatments -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/ailment.jpg" alt="Ailment Treatments" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Ailment Treatments</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Holistic support for chronic and acute health concerns like arthritis, diabetes, and hypertension.
+    </p>
+    <a href="/readmore/ailment.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Rejuvenation Treatments -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/rejuvenation.jpg" alt="Rejuvenation Treatments" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Rejuvenation Treatments</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Restore energy and vitality through Ayurvedic therapies, nutrition, and holistic wellness experiences.
+    </p>
+    <a href="/readmore/rejuvenation.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Lifestyle Treatment -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/lifestyle.jpg" alt="Lifestyle Treatment" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Lifestyle Treatment</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Transform your daily life with personalized plans focusing on nutrition, wellness, and balanced living.
+    </p>
+    <a href="/readmore/lifestyle.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Diet and Nutrition -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/diet.jpg" alt="Diet and Nutrition" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Diet and Nutrition</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Support your body with targeted nutritional programs designed to manage disease and boost overall health.
+    </p>
+    <a href="/readmore/nutrition.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Home Care Visitations -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/homecare.jpg" alt="Home Care Visitations" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Home Care Visitations</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Bringing expert care to your doorstep—personalized wellness and mobility support in the comfort of your home.
+    </p>
+    <a href="/readmore/homecare.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
+  <!-- Service Card: Life Coaching Programmes -->
+  <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-500 hover:shadow-2xl">
+    <div class="overflow-hidden rounded-2xl shadow-md mb-4">
+      <img src="images/lifecoaching.jpg" alt="Life Coaching Programmes" class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+    <h3 class="text-2xl font-bold text-green-800">Life Coaching Programmes</h3>
+    <p class="text-gray-700 mt-3 text-base leading-relaxed">
+      Unlock your full potential through guidance, self-discovery, and lifestyle changes tailored to your goals.
+    </p>
+    <a href="/readmore/lifecoaching.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium mt-4 hover:bg-green-700 transition transform hover:scale-105 shadow-md">
+      Read More
+    </a>
+  </div>
+  
         </div>
     </section>
     <footer class="bg-lime-400 text-gray-900 py-12 px-6 md:px-16 lg:px-32">
