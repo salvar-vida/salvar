@@ -140,40 +140,68 @@
                Enter your details and we’ll send you a Zoom link for your online consultation.
            </p>
 
-           <form @submit.prevent="alert('Your session is booked! Zoom link will be sent to your email.')">
-    <!-- Email -->
-    <div class="mb-4">
-        <label class="block text-left text-gray-700 font-medium mb-2">Email Address</label>
-        <input type="email" required
-            class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500">
-    </div>
+           <form 
+  action="https://formsubmit.co/salvarvida.homeopathy@gmail.com" 
+  method="POST"
+  class="grid grid-cols-1 gap-6 text-left"
+>
 
-    <!-- Phone -->
-    <div class="mb-4">
-        <label class="block text-left text-gray-700 font-medium mb-2">Phone Number</label>
-        <input type="tel" required
-            class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500">
-    </div>
+  <!-- Redirect to Thank You page -->
+  <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
 
-    <!-- Message -->
-    <div class="mb-6">
-        <label class="block text-left text-gray-700 font-medium mb-2">Message / Service Requested / Consultation</label>
-        <textarea required rows="4"
-            class="w-full border border-gray-300 rounded px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-green-500"
-            placeholder="Describe the service you're interested in (e.g. Ayurveda, mental health, diet plan, etc.)"></textarea>
-    </div>
+  <!-- Disable Captcha -->
+  <input type="hidden" name="_captcha" value="false">
 
-    <!-- Consultation Fee Note -->
-    <p class="text-sm text-gray-600 mb-4">
-        *Please note: A consultation fee applies. Payment instructions will be provided in the confirmation email.
-    </p>
+  <!-- Email -->
+  <div class="mb-4">
+    <label class="block text-left text-gray-700 font-medium mb-2">Email Address</label>
+    <input 
+      type="email" 
+      name="Email" 
+      required 
+      class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+    >
+  </div>
 
-    <!-- Submit -->
-    <button type="submit"
-        class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition duration-300">
-        Submit & Get Zoom Link
-    </button>
+  <!-- Phone -->
+  <div class="mb-4">
+    <label class="block text-left text-gray-700 font-medium mb-2">Phone Number</label>
+    <input 
+      type="tel" 
+      name="Phone Number" 
+      required 
+      class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+    >
+  </div>
+
+  <!-- Message -->
+  <div class="mb-6">
+    <label class="block text-left text-gray-700 font-medium mb-2">
+      Message / Service Requested / Consultation
+    </label>
+    <textarea 
+      name="Message" 
+      required 
+      rows="4"
+      placeholder="Describe the service you're interested in (e.g. Ayurveda, mental health, diet plan, etc.)"
+      class="w-full border border-gray-300 rounded px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-green-500"
+    ></textarea>
+  </div>
+
+  <!-- Fee Notice -->
+  <p class="text-sm text-gray-600 mb-4">
+    *Please note: A consultation fee applies. Payment instructions will be provided in the confirmation email.
+  </p>
+
+  <!-- Submit -->
+  <button 
+    type="submit"
+    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition duration-300"
+  >
+    Submit & Get Zoom Link
+  </button>
 </form>
+
 
 
            <!-- Close Modal -->
