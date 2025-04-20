@@ -17,72 +17,85 @@
 
 <body class="bg-gray-300">
     <!-- NAVBAR -->
-    <nav class="bg-gradient-to-br from-emerald-100 to-lime-600 md:fixed w-full z-20 shadow-lg">
-      <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <!-- Logo -->
-        <a href="/index.html">
-          <img src="/images/Logo.png" alt="Logo" class="w-24">
-        </a>
-  
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8 text-lg items-center">
-          <a href="/about.html" class="text-white hover:text-blue-700 transition">About</a>
-          <a href="/services.html" class="text-white hover:text-blue-700 transition">Services</a>
-          <div class="relative group">
-            <a href="#" class="text-white hover:text-blue-700 transition">Products</a>
-            <div class="absolute hidden group-hover:block bg-white text-gray-800 shadow-lg rounded-md mt-2 py-2 w-48 z-10">
-              <a href="#" class="block px-4 py-2 hover:bg-gray-400">Product 1</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-400">Product 2</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-400">Product 3</a>
-            </div>
+    <nav class="bg-lime-600 w-full z-10">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <div class="text-white text-3xl font-semibold">
+              <a href="/index.html">
+                  <img style="width: 100px;" src="/images/Logo.png" alt="">
+              </a>
           </div>
-          <a href="/contact.html" class="text-white hover:text-blue-700 transition">Contact Us</a>
-          <div class="relative group">
-            <a href="/onlinewellness.html" class="text-white hover:text-blue-700 transition">Online Services</a>
-            <div class="absolute hidden group-hover:block bg-white text-gray-800 shadow-lg rounded-md mt-2 py-2 w-48 z-10">
-              <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-400">Consultation</a>
-              <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-400">Counselling Sessions</a>
-              <a href="/contact.html" class="block px-4 py-2 hover:bg-blue-400">Online Booking</a>
-            </div>
-          </div>
-          <a href="/contact.html" class="bg-white text-green-700 px-6 py-2 rounded-full hover:bg-green-200 transition font-semibold">Book Now</a>
-        </div>
+          <div class="hidden md:flex space-x-10">
+              <a href="/about.html"
+                  class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">About</a>
   
-        <!-- Hamburger Button -->
-        <div class="md:hidden">
-          <button id="menuButton" class="text-white focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
+              <div class="relative group">
+                  <a href="/services.html"
+                      class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Services</a>
+              </div>
+  
+              <div class="relative group">
+                  <a href="#"
+                      class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Products</a>
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 1</a>
+                      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 2</a>
+                      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Product 3</a>
+                  </div>
+              </div>
+  
+              <a href="/contact.html"
+                  class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Contact
+                  Us</a>
+  
+              <div class="relative group">
+                  <a href="onlinewellness.html"
+                      class="text-white hover:text-blue-300 border-b-2 border-transparent hover:border-blue-300 transition duration-300 text-lg">Online
+                      Services</a>
+                  <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                      <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Consultation</a>
+                      <a href="/onlinewellness.html" class="block px-4 py-2 hover:bg-blue-500">Counselling Sessions</a>
+                      <a href="/contact.html" class="block px-4 py-2 hover:bg-blue-500">Online Booking</a>
+                  </div>
+              </div>
+  
+              <a href="/contact.html" class="bg-white text-green-600 px-6 py-3 rounded-full hover:bg-green-200 text-lg">Book
+                  Now</a>
+          </div>
+  <!-- Hamburger -->
+          <div class="md:hidden">
+              <button id="menuButton" class="text-white focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+              </button>
+          </div>
       </div>
   
       <!-- Mobile Menu -->
-      <div id="mobileMenu" class="hidden md:hidden bg-lime-700 px-6 py-4 text-white space-y-4">
+      <div id="mobileMenu" class="flex md:hidden bg-lime-700 text-white px-4 py-4 hidden space-y-4">
         <a href="/index.html" class="block text-lg">Homepage</a>
         <a href="/about.html" class="block text-lg">About</a>
         <a href="/services.html" class="block text-lg">Services</a>
         <a href="#" class="block text-lg">Products</a>
         <a href="/onlinewellness.html" class="block text-lg">Online Services</a>
-        <a href="/contact.html" class="bg-green-500 px-4 py-2 rounded-full text-lg inline-block text-center hover:bg-green-600">Book Now</a>
-      </div>
-
+        <a href="/contact.html" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 text-lg">Book Now</a>
+    </div>
+  
       <script>
-        AOS.init();
-        document.addEventListener("DOMContentLoaded", function () {
-          const menuButton = document.getElementById('menuButton');
-          const mobileMenu = document.getElementById('mobileMenu');
-          menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-          });
-        });
+          document.addEventListener("DOMContentLoaded", function () {
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+  
+      menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+      });
+  });
       </script>
-    </nav>
+  </nav>
   
     <!-- ✅ HERO SECTION -->
-    <section class="relative w-full bg-gradient-to-br from-emerald-50 to-lime-100 py-32 px-6 overflow-hidden">
+    <section class="relative h-[60vh] md:min-h-[100vh] w-full bg-gradient-to-br from-emerald-50 to-lime-100 py-4 overflow-hidden overflow-y-auto">
       <!-- Decorative Leaves Background -->
       <div class="absolute inset-0 pointer-events-none z-0 opacity-70">
         <img src="/images/leaves.jpg" alt="Leaves" class="w-full h-full object-cover">
@@ -586,9 +599,9 @@
 
 <script>
   const testimonials = [
-    "My worry was with hotstone massage I always thought you could get burned on the process. But wow, I had the most great experience ever with Kijani Wellness! I loved the parking and the nature surrounding the place. The staff are highly trained. I would highly recommend.",
-    "I experienced the best Spa visit, from the welcome pack when I walked in to the numerous services offered. The staff were very friendly and helpful. The face and body treatments were great. I had the Kijani Skin Sync Serum and a Moroccan scrub for my holiday special.",
-    "The herbal compress massage did it for me! I’ve suffered severe back pain for 2 years. My friend told me about Kijani and an alternative treatment called 'Compress Massage'. I had never heard of it but decided to try. I'm so glad I did. Beautiful and serene place."
+    "My worry was with hotstone massage I always thought you could get burned on the process. But wow, I had the most great experience ever with salvar vida! I loved the parking and the nature surrounding the place. The staff are highly trained. I would highly recommend.",
+    "I experienced the best Spa visit, from the welcome pack when I walked in to the numerous services offered. The staff were very friendly and helpful. The face and body treatments were great. I had the Salvar vida Skin Sync Serum and a Moroccan scrub for my holiday special.",
+    "The herbal compress massage did it for me! I’ve suffered severe back pain for 2 years. My friend told me about Salvar Vida and an alternative treatment called 'Compress Massage'. I had never heard of it but decided to try. I'm so glad I did. Beautiful and serene place."
   ];
 
   let current = 0;
